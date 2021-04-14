@@ -1,0 +1,168 @@
+:root {
+    --szToken: 20vh;
+    --szToken2: 18vh;
+    --szToken3: 14vh;
+    --szToken4: 16vh;
+    --szToken5: 16vh;
+    --c1: gold;
+    --c2: orange;
+    --c3: yellow;
+    --c4: wheat;
+    --c5: indianred;
+}
+
+
+
+body {
+height: 100vh;
+margin: auto;
+}
+
+#wrapper {
+    height: 25%;
+   display: flex;
+   
+}
+
+#wrapper > div {
+    width: 22vw;
+    height: 85%;
+    border: 2px solid black;  
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+
+
+#wrapper > div > div {
+    font-weight: bolder;
+    
+    font-size: 13px;
+}
+.active {
+    box-shadow: 0px 0px 15px black;
+  }
+
+#wrapper > div:hover  {
+    box-shadow: 0px 0px 4px black;
+    cursor: pointer;
+  }
+
+
+.schemediv {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#c3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 10px;
+
+ }
+
+#content{
+    height: 75%;
+    background-color: var(--c5);
+    
+}
+
+#knappar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    
+    flex-basis: 1px;
+    flex-grow: 0;
+    
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: var(--c4);
+    border: 1px solid black;
+
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 0px 0px 10px black;
+}
+
+.element{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.element > div {
+    width: var(--szToken);
+    height: var(--szToken);
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 5s, height 5s;
+    background-color: var(--c2);
+    
+}
+
+.element >  div > div {
+    height: var(--szToken2);
+    width: var(--szToken2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 5s, height 5s;
+    background-color: var(--c3);
+}
+
+.element > div > div > div:nth-child(1) {
+    height: var(--szToken3);
+    width: var(--szToken3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 5s, height 5s;
+    background-color: var(--c4);
+}
+
+.element > div > div > div > div:nth-child(1) {
+    height: var(--szToken4);
+    width: var(--szToken4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    transition: width 5s, height 5s;
+    background-color: var(--c3);
+}
+.element > div > div > div > div > div:nth-child(1) {
+
+    height: var(--szToken5);
+    width: var(--szToken5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    transition: width 5s, height 5s;
+    background-color: var(--c5);
+}
+
+
